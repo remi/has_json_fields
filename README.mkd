@@ -5,10 +5,13 @@
     end
 
     > order = Order.new
-    => #<Order id: nil, paypal_metadata: {}>
+    => #<Order id: nil, paypal_metadata: nil>
+
+    > order.paypal_metadata
+    => {}
 
     > order.paypal_metadata = { :foo => :bar }
-    => #<Order id: nil, paypal_metadata: { :foo => :bar }>
+    => #<Order id: nil, paypal_metadata: "{\"foo\":\"bar\"}">
 
     > order.paypal_metadata
     => { :foo => :bar }
