@@ -1,0 +1,14 @@
+## Usage
+
+    class Order < ActiveRecord::Base
+      has_json_fields :paypal_metadata
+    end
+
+    > order = Order.new
+    => #<Order id: nil, paypal_metadata: {}>
+
+    > order.paypal_metadata = { :foo => :bar }
+    => #<Order id: nil, paypal_metadata: { :foo => :bar }>
+
+    > order.paypal_metadata
+    => { :foo => :bar }
