@@ -1,3 +1,9 @@
+Sets one or several ActiveRecord model fields that will encode to JSON on write and decode back to Ruby object on read. Works best with database `text` fields.
+
+## Installation
+
+    ./script/plugin install git://github.com/remiprev/has_json_fields.git
+
 ## Usage
 
     class Order < ActiveRecord::Base
