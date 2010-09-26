@@ -1,4 +1,9 @@
-Sets one or several ActiveRecord model fields that will encode to JSON on write and decode back to Ruby object on read. Works best with database `text` fields.
+Sets one or several ActiveRecord model fields that will encode to JSON on write and decode back to Ruby hash on read. Works best with database `text` fields.
+
+## Requirements
+
+* `json` gem
+* `rails` (2.3.\*) gem
 
 ## Installation
 
